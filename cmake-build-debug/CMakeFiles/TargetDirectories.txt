@@ -1,0 +1,3 @@
+C:/Users/Foldman/CLionProjects/inf-praktikum01.1/cmake-build-debug/CMakeFiles/inf_praktikum01_1.dir
+C:/Users/Foldman/CLionProjects/inf-praktikum01.1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Foldman/CLionProjects/inf-praktikum01.1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
