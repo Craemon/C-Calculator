@@ -1,37 +1,55 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
-    int number1;
-    int number2;
-
-    //ask and save number input
-
-    printf("Choose your first number:\n");
-    scanf("%d",&number1);
-
-    printf("Choose your second number:\n");
-    scanf("%d",&number2);
+    char operation;
+    int numb1, numb2;
+    float result;
 
     //ask for operation to execute
 
-    printf("Choose your operation:\n");
-    char operation[3];
-    scanf("%s", operation);
+    printf("Choose your operation(+, -, *, /):");
+    scanf("%c", &operation);
 
-    if (operation == "add")
+    switch (operation)
     {
-        int result = number1 + number2;
-        printf("Your result is:\n");
-        printf("%i", result);
-        return result;
+        //case: addition
+        case '+':
+            printf("Enter two numbers: ");
+            scanf("%d%d", &numb1, &numb2);
+            result = numb1 + numb2;
+            printf("The sum is: %f\n", result);
+            break;
+
+        //case: subtraction
+        case '-':
+            printf("Enter two numbers: ");
+            scanf("%d%d", &numb1, &numb2);
+            result = numb1 - numb2;
+            printf("The difference is: %f\n", result);
+            break;
+
+        //case: multiplication
+        case '*':
+            printf("Enter two numbers: ");
+            scanf("%d%d", &numb1, &numb2);
+            result = numb1 * numb2;
+            printf("The product is: %f\n", result);
+            break;
+
+        //case division
+        case '/':
+            printf("Enter two numbers: ");
+            scanf("%d%d", &numb1, &numb2);
+            if (numb2 == 0)
+            {
+                printf("Divide by 0 Error\n");
+                break;
+            }
+            result = numb1 / numb2;
+            printf("The quotient is: %f\n", result);
+            break;
     }
-    else if (operation == "subtract")
-    {
-        int result = number1 - number2;
-    };
-
-    printf("Your result is:\n");
-    printf("%i", result);
     return 0;
 }
