@@ -21,5 +21,5 @@ Finally it wil output the result.
 The user is asked for an operation stored as a char using "scanf".
 A switch statement chooses the correct operation based on the provided char.
 The user is asked to input two numbers, both stored as integers and used to calculate the result (float).
-For division there is an additional if statement, chacking for 0 in the divisor and (if the case) printing and error message.
+For division there is an additional if statement, checking for 0 in the divisor and (if the case) printing and error message.
 And finally the result is provided.
